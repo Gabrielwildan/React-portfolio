@@ -1,0 +1,80 @@
+#intro {
+    height: calc(100vh - 5rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.bg {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+}
+
+.intro-content {
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hire-me {
+    width: 1rem;
+    height: 1rem;
+    object-fit: cover;
+    margin: 0 0.25rem;
+
+}
+
+.hello {
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.nama {
+    color: #FF7C03;
+}
+
+.intro-para {
+    font-size: medium;
+    font-weight: 200;
+    letter-spacing: 1px;
+
+}
+
+.btn {
+    background: white;
+    margin: 1rem 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width:840px) {
+    .bg {
+        right: -10vw;
+    }
+
+    .intro-content {
+        font-size: 7vw;
+    }
+
+    .hello {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .bg {
+        right: -30vw;
+    }
+}

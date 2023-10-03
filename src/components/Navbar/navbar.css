@@ -1,0 +1,97 @@
+.navbar {
+    height: 5rem;
+    width: 100vw;
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background: #292929;
+    border-radius: 10px;
+}
+
+.Logo {
+    object-fit: contain;
+    height: 8rem;
+    width: 9rem;
+}
+
+.menu-list-item {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.menu-list-item:hover {
+    color: #FF7C03;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #FF7C03;
+}
+
+.menu-btn {
+    background: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 1rem;
+    border-radius: 1rem;
+}
+
+.menu-img {
+    object-fit: center;
+    width: 1rem;
+    height: 1rem;
+    margin: 1rem;
+}
+
+.active {
+    color: #FF7C03;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #FF7C03;
+}
+
+.nav-mob-menu {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    height: fit-content;
+    min-width: 15rem;
+    background: rgb(50, 50, 50);
+    border-radius: 1rem;
+}
+
+.list-item {
+    color: white;
+    padding: 0.5rem 3rem;
+    margin: 0.25rem;
+    background-color: #292929;
+}
+
+.mob-menu {
+    width: 2rem;
+    display: none;
+    object-fit: cover;
+    height: 1.8rem;
+}
+
+@media screen and (max-width:720px) {
+    .mob-menu {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+}
